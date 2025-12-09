@@ -4,3 +4,5 @@
 *.class
 *.properties
 *.netbeans
+/dist/
+/BuenoRaul_ActividadesUD3.odt/Actividad_02_UD3_ED/build/
