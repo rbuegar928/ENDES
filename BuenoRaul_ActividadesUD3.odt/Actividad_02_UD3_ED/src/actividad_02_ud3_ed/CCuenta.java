@@ -36,6 +36,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el nombre de la persona asociada a la cuenta.
      * @return Nombre del titular
      */
     public String obtenerNombre() {
