@@ -28,6 +28,7 @@ public class CCuenta {
     }
 
     /**
+     * Asignar nombre al titulas de la cuenta.
      * @param nom Nombre del titular
      */
     public void asignarNombre(String nom) {
@@ -42,6 +43,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el saldo actual de la cuenta.
      * @return Saldo disponible
      */
     public double estado() {
@@ -49,6 +51,7 @@ public class CCuenta {
     }
 
     /**
+     * Ingresa dinero en la cuenta (la cantidad estblacida tiene que ser positiva)
      * @throws Exception si la cantidad que decimos es negativa
      */
     public void ingresar(double cantidad) throws Exception {
@@ -59,6 +62,7 @@ public class CCuenta {
     }
 
     /**
+     * Retira dinero de la cuennta
      * @throws Exception si la cantidad es negativa o no hay suficiente saldo
      */
     public void retirar(double cantidad) throws Exception {
@@ -72,6 +76,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el número de cuenta.
      * @return Número de cuenta
      */
     public String obtenerCuenta() {
@@ -79,6 +84,7 @@ public class CCuenta {
     }
 
     /**
+     * Establece nuevo número de cuenta.
      * @param cuenta Nuevo número de cuenta
      */
     public void setCuenta(String cuenta) {
@@ -86,6 +92,7 @@ public class CCuenta {
     }
 
     /**
+     * Estabkece el saldo de la cuenta.
      * @param saldo Nuevo saldo
      */
     public void setSaldo(double saldo) {
@@ -93,6 +100,7 @@ public class CCuenta {
     }
 
     /**
+     * Devuelve el tipo de interés de la cuenta.
      * @return Tipo de interés
      */
     public double getTipoInterés() {
@@ -100,6 +108,7 @@ public class CCuenta {
     }
 
     /**
+     * Establece un nuevo tipo de interés para la cuenta.
      * @param tipoInterés Nuevo tipo de interés
      */
     public void setTipoInterés(double tipoInterés) {
