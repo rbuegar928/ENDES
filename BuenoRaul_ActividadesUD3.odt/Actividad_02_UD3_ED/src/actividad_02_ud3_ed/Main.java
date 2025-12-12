@@ -16,41 +16,41 @@ public class Main {
         CCuenta cuenta1;
         double saldoActual;
         int opcion=0;
-        cuenta1 = new CCuenta("Juan LÃ³pez","1000-2365-85-123456789",2500,0);
+        cuenta1 = new CCuenta("Juan López","1000-2365-85-123456789",2500,0);
         do{
             try {
-                System.out.println("MENÃš DE OPERACIONES");
+                System.out.println("MENÚ DE OPERACIONES");
                 System.out.println("-------------------");
                 System.out.println("1 - Ingresar");
                 System.out.println("2 - Retirar");
                 System.out.println("3 - Finalizar");
                 opcion=Integer.parseInt(dato.readLine());
                 if(opcion==1){
-                    System.out.println("Â¿CuÃ¡nto desea ingresar?: ");
+                    System.out.println("¿Cuánto desea ingresar?: ");
                     float ingresar=Integer.parseInt(dato.readLine());
                     operativa_cuenta(cuenta1,ingresar,opcion);
                 }else if(opcion==2){
-                    System.out.println("Â¿CuÃ¡nto desea retirar?: ");
+                    System.out.println("¿Cuánto desea retirar?: ");
                     float retirar=Integer.parseInt(dato.readLine());
                     operativa_cuenta(cuenta1,retirar,opcion);
                 }else if(opcion==3){
-                    System.out.println("Finalizamos la ejecuciÃ³n");
+                    System.out.println("Finalizamos la ejecución");
                 }else{
-                    System.err.println("OpciÃ³n errÃ³nea");
+                    System.err.println("Opción errónea");
                 }
 /*                switch(opcion){
                     case 1:
-                        System.out.println("Â¿CuÃ¡nto desea ingresar?: ");
+                        System.out.println("¿Cuánto desea ingresar?: ");
                         float ingresar=Integer.parseInt(dato.readLine());
                         operativa_cuenta(cuenta1,ingresar,opcion);
                         break;
                     case 2:
-                        System.out.println("Â¿CuÃ¡tno desea retirar?: ");
+                        System.out.println("¿Cuátno desea retirar?: ");
                         float retirar=Integer.parseInt(dato.readLine());
                         operativa_cuenta(cuenta1,retirar,opcion);
                         break;
                     case 3:
-                        System.out.println("Finalizamos la ejecuciÃ³n");
+                        System.out.println("Finalizamos la ejecución");
                 }
 */            } catch (IOException ex) {
                 Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
